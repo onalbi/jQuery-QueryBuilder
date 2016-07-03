@@ -1,19 +1,30 @@
 {
   "name": "jQuery-QueryBuilder",
-  "version": "1.1.0",
+  "version": "2.3.3",
   "authors": [{
     "name": "Damien \"Mistic\" Sorel",
+    "email": "contact@git.strangeplanet.fr",
     "homepage": "http://www.strangeplanet.fr"
   }],
   "description": "jQuery plugin for user friendly query/filter creator",
   "main": [
-    "dist/query-builder.js",
-    "dist/query-builder.css"
+    "dist/js/query-builder.js",
+    "dist/css/query-builder.default.css"
   ],
-  "dependencies" : {
+  "dependencies": {
     "jquery": ">= 1.9.0",
-    "bootstrap": "3.x.x",
-    "momentjs": "2.x.x"
+    "bootstrap": ">= 3.1.0",
+    "moment": ">= 2.6.0",
+    "jquery-extendext": ">= 0.1.2",
+    "doT": "master"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.0",
+    "qunit": "^1.23.0",
+    "bootstrap-select": "^1.10.0",
+    "bootbox": "^4.4.0",
+    "awesome-bootstrap-checkbox": "^0.3.0",
+    "sql-parser": "^1.0.0"
   },
   "keywords": [
     "jquery",
@@ -31,7 +42,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "src",
+    "tests",
+    "composer.json",
+    "package.json",
+    "Gruntfile.js",
+    "CONTRIBUTING.md"
   ]
 }
